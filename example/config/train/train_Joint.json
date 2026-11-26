@@ -1,0 +1,58 @@
+{
+    "train_method":"select dataset",
+    "dataset_folder_format":{
+        "RGB_folder":"RGB",
+        "PCloud_folder":"pointclouds",
+        "Depth_folder":"Depth",
+        "Calib_folder":"calib"
+    },
+    "dataset_root":"./Datasets",
+    "select_dataset_mode_params":{
+        "train_subset":[
+            "Argo2/Argo2_000/000_00_RFC","Argo2/Argo2_000/000_01_RFC","Argo2/Argo2_000/000_00_RFC","Argo2/Argo2_000/000_01_RFC",
+            "Argo2/Argo2_000/000_00_RFL","Argo2/Argo2_000/000_01_RFL","Argo2/Argo2_000/000_00_RFL","Argo2/Argo2_000/000_01_RFL",
+            "KITTI_08",
+            "Argo2/Argo2_000/000_00_RFC","Argo2/Argo2_000/000_01_RFC","Argo2/Argo2_000/000_00_RFC","Argo2/Argo2_000/000_01_RFC",
+            "Argo2/Argo2_000/000_00_RFL","Argo2/Argo2_000/000_01_RFL","Argo2/Argo2_000/000_00_RFL","Argo2/Argo2_000/000_01_RFL"],
+        "train_sample_mode":[
+            [1,1,-1],[1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],[1,1,-1],
+            [1,2,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],[1,1,-1]
+        ],
+        
+        "val_subset":[
+            "Argo2/Argo2_000/000_00_SFL","Argo2/Argo2_000/000_00_SFR","Argo2/Argo2_000/000_00_RFR",
+            "Argo2/Argo2_000/000_01_SFL","Argo2/Argo2_000/000_01_SFR","Argo2/Argo2_000/000_01_RFR",
+            "Argo2/Argo2_000/000_00_SFL","Argo2/Argo2_000/000_00_SFR","Argo2/Argo2_000/000_00_RFR",
+            "Argo2/Argo2_000/000_00_SFL","Argo2/Argo2_000/000_00_SFR","Argo2/Argo2_000/000_00_RFR",
+            "Argo2/Argo2_000/000_01_SFL","Argo2/Argo2_000/000_01_SFR","Argo2/Argo2_000/000_01_RFR",
+            "Argo2/Argo2_000/000_01_SFL","Argo2/Argo2_000/000_01_SFR","Argo2/Argo2_000/000_01_RFR"
+        ],
+        "val_sample_mode":[
+            [1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1],
+            [1,1,-1],[1,1,-1],[1,1,-1]
+        ]
+    },
+    
+    "epoch":200,
+    "batch_size":8,
+    "weight_folder":"./weights/Joint",
+    "weight_name":"DST_Joint.pth",
+    
+    "projection_type":"Depth",
+    
+    "s4":"data augmentation range for the LiDAR side",
+    "r_Euler_range":[3.0,1.0,1.0],
+    "t_range":[0.3,0.1,0.1],
+    "s5":"data augmentation range for the camera side",
+    "r_Euler_range2":[3.0,1.0,1.0],
+    "t_range2":[0.3,0.1,0.1],
+
+    "pretrained": true
+}

@@ -1,0 +1,31 @@
+{
+    "train_method":"select dataset",
+    "dataset_folder_format":{
+        "RGB_folder":"RGB",
+        "PCloud_folder":"pointclouds",
+        "Depth_folder":"Depth",
+        "Calib_folder":"calib"
+    },
+    "dataset_root":"./Datasets",
+    "select_dataset_mode_params":{
+        "train_subset":["KITTI_08"],
+        "train_sample_mode":[[1,1,-1]],
+        
+        "val_subset":["KITTI_Right08"],
+        "val_sample_mode":[[1,1,-1]]
+    },
+    
+    "epoch":200,
+    "batch_size":8,
+    "weight_folder":"./weights/Base",
+    "weight_name":"DST_Base.pth",
+    
+    "projection_type":"Depth",
+    
+    "s4":"data augmentation range for the LiDAR side",
+    "r_Euler_range":[3.0,1.0,1.0],
+    "t_range":[0.3,0.1,0.1],
+    "s5":"data augmentation range for the camera side",
+    "r_Euler_range2":[3.0,1.0,1.0],
+    "t_range2":[0.3,0.1,0.1]
+}

@@ -1,0 +1,25 @@
+{
+    "train_method": "select dataset",
+    "dataset_folder_format": {
+        "RGB_folder": "RGB",
+        "PCloud_folder": "pointclouds",
+        "Depth_folder": "Depth",
+        "Calib_folder": "calib"
+    },
+    "dataset_root": "./Datasets",
+    "select_dataset_mode_params": {
+        "test_subset":["Argo2/Argo2_000/000_02_RRL","Argo2/Argo2_000/000_02_RRR","Argo2/Argo2_000/000_03_RRL","Argo2/Argo2_000/000_03_RRR","Argo2/Argo2_000/000_04_RRL","Argo2/Argo2_000/000_04_RRR","Argo2/Argo2_000/000_05_RRL","Argo2/Argo2_000/000_05_RRR","Argo2/Argo2_000/000_06_RRL","Argo2/Argo2_000/000_06_RRR","Argo2/Argo2_000/000_07_RRL","Argo2/Argo2_000/000_07_RRR","Argo2/Argo2_000/000_08_RRL","Argo2/Argo2_000/000_08_RRR","Argo2/Argo2_000/000_09_RRL","Argo2/Argo2_000/000_09_RRR","Argo2/Argo2_000/000_10_RRL","Argo2/Argo2_000/000_10_RRR","Argo2/Argo2_000/000_11_RRL","Argo2/Argo2_000/000_11_RRR","Argo2/Argo2_000/000_12_RRL","Argo2/Argo2_000/000_12_RRR","Argo2/Argo2_000/000_13_RRL","Argo2/Argo2_000/000_13_RRR","Argo2/Argo2_000/000_14_RRL","Argo2/Argo2_000/000_14_RRR","Argo2/Argo2_000/000_15_RRL","Argo2/Argo2_000/000_15_RRR","Argo2/Argo2_000/000_16_RRL","Argo2/Argo2_000/000_16_RRR","Argo2/Argo2_000/000_17_RRL","Argo2/Argo2_000/000_17_RRR","Argo2/Argo2_000/000_18_RRL","Argo2/Argo2_000/000_18_RRR","Argo2/Argo2_000/000_19_RRL","Argo2/Argo2_000/000_19_RRR"],
+        "test_sample_mode":[[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1]]
+    },
+    "epoch": 10,
+    "batch_size": 8,
+    "weight_folder": "./weights/Joint",
+    "weight_name": "DST_Joint.pth",
+    "projection_type": "Depth",
+    "s4": "data augmentation range for the LiDAR side",
+    "r_Euler_range":[3.0,1.0,1.0],
+    "t_range":[0.3,0.1,0.1],
+    "s5": "data augmentation range for the camera side",
+    "r_Euler_range2":[3.0,1.0,1.0],
+    "t_range2":[0.3,0.1,0.1]
+}

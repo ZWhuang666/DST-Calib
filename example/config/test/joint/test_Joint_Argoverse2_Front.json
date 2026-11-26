@@ -1,0 +1,25 @@
+{
+    "train_method": "select dataset",
+    "dataset_folder_format": {
+        "RGB_folder": "RGB",
+        "PCloud_folder": "pointclouds",
+        "Depth_folder": "Depth",
+        "Calib_folder": "calib"
+    },
+    "dataset_root": "./Datasets",
+    "select_dataset_mode_params": {
+        "test_subset":["Argo2/Argo2_000/000_02_RFR","Argo2/Argo2_000/000_02_SFL","Argo2/Argo2_000/000_02_SFR","Argo2/Argo2_000/000_03_RFR","Argo2/Argo2_000/000_03_SFL","Argo2/Argo2_000/000_03_SFR","Argo2/Argo2_000/000_04_RFR","Argo2/Argo2_000/000_04_SFL","Argo2/Argo2_000/000_04_SFR","Argo2/Argo2_000/000_05_RFR","Argo2/Argo2_000/000_05_SFL","Argo2/Argo2_000/000_05_SFR","Argo2/Argo2_000/000_06_RFR","Argo2/Argo2_000/000_06_SFL","Argo2/Argo2_000/000_06_SFR","Argo2/Argo2_000/000_07_RFR","Argo2/Argo2_000/000_07_SFL","Argo2/Argo2_000/000_07_SFR","Argo2/Argo2_000/000_08_RFR","Argo2/Argo2_000/000_08_SFL","Argo2/Argo2_000/000_08_SFR","Argo2/Argo2_000/000_09_RFR","Argo2/Argo2_000/000_09_SFL","Argo2/Argo2_000/000_09_SFR","Argo2/Argo2_000/000_10_RFR","Argo2/Argo2_000/000_10_SFL","Argo2/Argo2_000/000_10_SFR","Argo2/Argo2_000/000_11_RFR","Argo2/Argo2_000/000_11_SFL","Argo2/Argo2_000/000_11_SFR","Argo2/Argo2_000/000_12_RFR","Argo2/Argo2_000/000_12_SFL","Argo2/Argo2_000/000_12_SFR","Argo2/Argo2_000/000_13_RFR","Argo2/Argo2_000/000_13_SFL","Argo2/Argo2_000/000_13_SFR","Argo2/Argo2_000/000_14_RFR","Argo2/Argo2_000/000_14_SFL","Argo2/Argo2_000/000_14_SFR","Argo2/Argo2_000/000_15_RFR","Argo2/Argo2_000/000_15_SFL","Argo2/Argo2_000/000_15_SFR","Argo2/Argo2_000/000_16_RFR","Argo2/Argo2_000/000_16_SFL","Argo2/Argo2_000/000_16_SFR","Argo2/Argo2_000/000_17_RFR","Argo2/Argo2_000/000_17_SFL","Argo2/Argo2_000/000_17_SFR","Argo2/Argo2_000/000_18_RFR","Argo2/Argo2_000/000_18_SFL","Argo2/Argo2_000/000_18_SFR","Argo2/Argo2_000/000_19_RFR","Argo2/Argo2_000/000_19_SFL","Argo2/Argo2_000/000_19_SFR"],
+        "test_sample_mode":[[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1],[1,2,-1]]
+    },
+    "epoch": 10,
+    "batch_size": 8,
+    "weight_folder": "./weights/Joint",
+    "weight_name": "DST_Joint.pth",
+    "projection_type": "Depth",
+    "s4": "data augmentation range for the LiDAR side",
+    "r_Euler_range":[3.0,1.0,1.0],
+    "t_range":[0.3,0.1,0.1],
+    "s5": "data augmentation range for the camera side",
+    "r_Euler_range2":[3.0,1.0,1.0],
+    "t_range2":[0.3,0.1,0.1]
+}
